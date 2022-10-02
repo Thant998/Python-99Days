@@ -1,1 +1,3 @@
-# PROJECT
+# Simple logic for Python
+
+
