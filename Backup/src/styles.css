@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+    background-color: rgb(233, 236, 243);
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+ body {
+    height: 100%;
+    /* background: linear-gradient(#ff9494,#76dbe9); */
+     /* background: linear-gradient(#e28edb,#57dada);  */
+} 
+
+.mat-button.mat-accent,
+.mat-icon-button.mat-accent,
+.mat-strokd-button.mat-accent{
+    color : #00e676
+}

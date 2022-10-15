@@ -1,0 +1,43 @@
+.main-box{
+    height: 590px;
+    background-color: #69a9e9;
+}
+
+.menu-items{
+    list-style: none ;
+    line-height: 50px; 
+    padding-left: 0px;
+    /* height: 100%; */
+}
+
+.menu-items li{
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 40px;
+    /* cursor: pointer; */
+}
+
+ .menu-items li:hover{
+    background-color: rgb(170, 172, 175);
+    color: white;
+} 
+
+.fa-solid fa-plus:hover{
+    background-color: rgb(68, 64, 64);
+    color: antiquewhite;
+} 
+
+/* .onActive:hover{
+    color: white !important;
+    background-color: rgb(222, 222, 245) !important;
+} */
+
+.plussign{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    
+}
+
+
+

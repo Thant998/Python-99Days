@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<div class="row">
+  <div class="col-lg-2">
+    <div class="main-box">
+      <div class="side-menu-list">
+        
+        <ul class="menu-items">
+          <li (click)="goTo('Home')" [ngClass]="{'onActive': selectedMenu == 'Home'}"><mat-icon fontIcon="home"></mat-icon>&nbsp; &nbsp;Home</li>
+          <li (click)="goTo('Boards')" [ngClass]="{'onActive': selectedMenu == 'Boards'}"><i class="fa fa-trello"></i>&nbsp; &nbsp;Boards</li>
+          <li (click)="goTo('Templates')" [ngClass]="{'onActive': selectedMenu == 'Templates'}"><i class="fa fa-trello"></i>&nbsp; &nbsp;Templates</li>
+        </ul>
+
+        <div #myDiv style="overflow-y: scroll;height:420px;width:207px;text-align:center;"> 
+          <i class="fa fa-trello"></i>&nbsp; &nbsp; 
+          Workspaces &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <button (click)="onCreate()" class="plussign"><i  class="fa-solid fa-plus"></i></button>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-lg-2">
+    <div class="side-menu-content">
+      <div class="tabs" *ngIf="selectedMenu == 'Home'">
+        <div class="col-md-5">
+         
+        </div>
+        <label for="name" class="col-md-6 col-form-label">Link</label>
+        <p></p>
+          <div class="col-md-8">
+            <button (click)="createBoardFromHome()" class="plussign"><i class="fa-solid fa-plus"></i>&nbsp; &nbsp; &nbsp;
+              Create board
+            </button>
+          </div>
+      </div>
+
+      <div class="tabs" *ngIf="selectedMenu == 'Boards'">
+        this is boards
+      </div>
+
+      <div class="tabs" *ngIf="selectedMenu == 'Templates'">
+      this is Templates
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</div>

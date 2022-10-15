@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+</head>
+<body>
+
+    <div class="main">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img [src]="url2" alt="sing up image"></figure>
+                        <a routerLink="/signup" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign up</h2>
+
+                        <form [formGroup]="loginForm" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="email"><i class="fa fa-envelope p-2" aria-hidden="true"></i></label>
+                                <input type="text" name="email" id="email" placeholder="Your Email"/>
+                                <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')" class="text-danger"> *Email must be a valid email address</small> 
+                            </div>
+                          
+
+                            <div class="form-group">
+                                <label for="password"><i class="fa fa-lock p-2"></i></label>
+                                <input type="password" name="password" id="password" placeholder="Password"/>
+                            </div>
+                            <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger"> *Password must be at least 6 characters </small>
+                            <div class="form-group">
+                                <div class="form-inline fr mt-4">
+                                    <a id="forget" class="font-weight-bold">Forget Password? </a>
+                                </div>
+                            </div>
+                            <div class="form-group form-button">
+                                <input (click)="onSubmit()" [disabled]="loginForm.invalid" type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <div class="row">
+                                <div class="col text-nowrap"><a class="text-decoration-none"
+                                        href="https://www.facebook.com/aceinspiration">
+                                        <p class="text-truncate text-decoration-none" 
+                                            style="font-size: 17px;">
+                                            <img [src]="url1"
+                                                style="width: 18px;">&nbsp; www.facebook.com/ACE Inspiration
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    </div>
