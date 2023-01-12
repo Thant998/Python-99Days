@@ -1,4 +1,4 @@
 # Simple logic for Python
 
 
-basic logic using python
+Basic logic using python
