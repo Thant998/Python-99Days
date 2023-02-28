@@ -11,9 +11,7 @@ body {
 }
 
  body {
-    height: 100%;
-    /* background: linear-gradient(#ff9494,#76dbe9); */
-     /* background: linear-gradient(#e28edb,#57dada);  */
+    height: 100%  
 } 
 
 .mat-button.mat-accent,
