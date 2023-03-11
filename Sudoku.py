@@ -111,4 +111,4 @@ grid = [[3, 0, 6, 5, 0, 8, 4, 0, 0],
 if (solveSudoku(grid, 0, 0)):
     printing(grid)
 else:
-    print("no solution  exists ")
+    print("no solution exists ")
