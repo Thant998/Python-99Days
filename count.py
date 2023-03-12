@@ -14,5 +14,6 @@ for i in range(len(string)):
 for j in string:
     if j.isdigit():
         countdigit+=1
+        
 print(f"{countvowel} vowel is found in string")
 print(f"{countdigit} digit is found in string")
