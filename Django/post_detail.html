@@ -1,0 +1,24 @@
+<!-- blog/templates/blog/post_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Blog Posts</h1>
+
+{% for post in posts %}
+<h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+<p>{{ post.content }}</p>
+<p>{{ post.pub_date }}</p>
+{% endfor %}
+{% endblock %}
+
+
+<!-- blog/templates/blog/post_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+<p>{{ post.pub_date }}</p>
+{% endblock %}
