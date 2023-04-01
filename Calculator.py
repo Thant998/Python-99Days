@@ -1,6 +1,6 @@
 print("     Welcome to My Calculator app        ")
 
-while True:                                 #while 1: while True=while 1
+while True:                                 
     print("What would you like to do?")
     print("1. Addition")
     print("2. Subtraction")
