@@ -1,4 +1,4 @@
-# Simple logic for Python
+# Problem solving with Python
 
 
 
