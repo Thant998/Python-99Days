@@ -95,8 +95,7 @@ def solveSudoku(grid, row, col):
         grid[row][col] = 0
     return False
  
-# Driver Code
- 
+# Driver Code 
 # 0 means unassigned cells
 grid = [[3, 0, 6, 5, 0, 8, 4, 0, 0],
         [5, 2, 0, 0, 0, 0, 0, 0, 0],
