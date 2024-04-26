@@ -1,4 +1,4 @@
-print("     Welcome to My Calculator app        ")
+print("    Welcome to My Calculator app       ")
 
 while True:                                 
     print("What would you like to do?")
