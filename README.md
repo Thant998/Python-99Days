@@ -1,1 +1,1 @@
-# Problem solving with Python
+# Problem solution with Python
