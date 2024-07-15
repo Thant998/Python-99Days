@@ -1,1 +1,1 @@
-# Python solution from code signal
+# Python problem solving from code signal
